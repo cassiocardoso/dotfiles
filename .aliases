@@ -6,6 +6,9 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
+alias proj="cd ~/Projects"
+alias sites="cd ~/Sites"
+alias dk='cd ~/Desktop'
 
 # be nice
 alias please=sudo
@@ -75,7 +78,6 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 
-
 # Shortcuts
 alias g="git"
 alias gh="github"
@@ -86,13 +88,6 @@ alias gsl="git stash list"
 alias gsp="git stash pop"
 
 alias v="vim"
-
-# bower aliases
-alias bs='bower search'
-alias bi='bower install'
-alias bis='bower install --save'
-alias bp='bower prune'
-alias bibp='bower install && bower prune'
 
 # npm aliases
 alias ns='npm search'
@@ -121,8 +116,6 @@ alias tu='npm run test:ui'
 alias npc='npm run precommit'
 
 alias mocha6='mocha --compilers js:babel/register'
-
-alias dk='cd ~/Desktop'
 
 # fasd aliases. remember to add them to fasd init
 alias sb='fasd -e subl -d'
@@ -155,6 +148,14 @@ alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 
 # PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
 alias plistbuddy="/usr/libexec/PlistBuddy"
+
+# Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup"
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
