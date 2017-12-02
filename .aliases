@@ -117,6 +117,10 @@ alias npc='npm run precommit'
 
 alias mocha6='mocha --compilers js:babel/register'
 
+# docker aliases
+alias dcb='docker-compose build'
+alias dcu='docker-compose up'
+
 # fasd aliases. remember to add them to fasd init
 alias sb='fasd -e subl -d'
 
