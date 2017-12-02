@@ -22,10 +22,6 @@ run_apps() {
 	brew cask install bettertouchtool
 	brew cask install couleurs
 	brew cask install cyberduck
-	brew cask install dockertoolbox
-	brew cask install firefox
-	brew cask install github-desktop
-	brew cask install google-chrome
 	brew cask install imageoptim
 	brew cask install jewelrybox
 	brew cask install ksdiff # Kaleidoscope command line
