@@ -14,7 +14,8 @@ npm_packages=(
 	jscodeshift
 	jsdoc
 	mocha
-	node-sass
+	n
+        node-sass
 	npm-check-updates
 	ntl
 	pm2
