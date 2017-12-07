@@ -64,12 +64,12 @@ run_brew() {
 	brew install jq
 	brew install imagemagick --with-webp
 	brew install lame
-	brew install node
+        brew install nginx
+        brew install node
 	brew install nvm
 	brew install rename
 	brew install tree
 	brew install wp-cli
-	#brew install android-platform-tools
 
 	# Install code review tools
 	brew tap codeclimate/formulae
@@ -83,8 +83,6 @@ run_brew() {
 	# Install other tools
 	brew install docker docker-machine docker-clean
 	brew install watchman
-
-	#brew link openssl --force
 
 	# Remove outdated versions from the cellar
 	brew cleanup
