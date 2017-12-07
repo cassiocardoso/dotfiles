@@ -45,7 +45,7 @@ if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
 fi
 
 # added by travis gem
-[ -f /Users/gilbarbara/.travis/travis.sh ] && source /Users/gilbarbara/.travis/travis.sh
+[ -f /Users/cassiocardoso/.travis/travis.sh ] && source /Users/cassiocardoso/.travis/travis.sh
 
 # Increase ulimit
 ulimit -n 2048
