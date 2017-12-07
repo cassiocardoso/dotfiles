@@ -15,6 +15,7 @@ run_apps() {
     brew cask install skype
     brew cask install slack
     brew cask install soulver
+    brew cask install spectacle
     brew cask install spotify
     brew cask install the-unarchiver
     brew cask install transmission
@@ -23,11 +24,13 @@ run_apps() {
     # dev
     brew cask install atom
     brew cask install bettertouchtool
+    brew cask install bitbar
     brew cask install coderunner
     brew cask install couleurs
     brew cask install cyberduck
     brew cask install github
     brew cask install google-chrome-canary
+    brew cask install hyper
     brew cask install imageoptim
     brew cask install iterm2
     brew cask install jewelrybox
