@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 logging() {
-
     # write your test however you want; this just tests if SILENT is non-empty
     if [ -n "$SILENT" ]; then
         "$@" &> /dev/null
@@ -9,6 +8,7 @@ logging() {
         "$@"
     fi
 }
+
 # Header logging
 e_header() {
     logging printf "\n$(tput setaf 7)%s:$(tput sgr0) \n" "$@"

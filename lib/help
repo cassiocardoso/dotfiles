@@ -1,25 +1,22 @@
 #!/usr/bin/env bash
 
 run_help() {
+	cat <<EOT
 
-cat <<EOT
+	Options:
+		-h, --help		Print this help text
+		--no-log		Suppress verbose logging
+		--no-apps		Suppress application installs
+		apps			Install apps only
+		brew			Install brew packages
+		dotfiles		Symlink dotfiles
+		fonts			Install fonts
+		npm				Install NPM global packages
+		rubygems		Install gems
+		tools			Install bash tools
+		utils			Install some util stuf
 
-
-Options:
-    -h, --help		Print this help text
-    --no-log		Suppress verbose logging
-    --no-apps		Suppress application installs
-    apps			Install apps only
-    brew			Install brew packages
-    dotfiles		Symlink dotfiles
-    fonts			Install fonts
-    npm				Install NPM global packages
-    quicklook		Install QL plugins
-    ruby			Install gems
-    sublime			Install basic plugins and preferences
-    tools			Install bash tools
-
-Documentation can be found at https://github.com/gilbarbara/dotfiles
+	Documentation can be found at https://github.com/cassiocardoso/dotfiles
 
 EOT
 }

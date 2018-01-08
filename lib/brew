@@ -2,7 +2,6 @@
 
 # Install command-line tools using Homebrew
 run_brew() {
-
 	# Make sure we’re using the latest Homebrew
 	brew update
 
@@ -64,8 +63,8 @@ run_brew() {
 	brew install jq
 	brew install imagemagick --with-webp
 	brew install lame
-        brew install nginx
-        brew install node
+  	brew install nginx
+  	brew install node
 	brew install nvm
 	brew install rename
 	brew install tree

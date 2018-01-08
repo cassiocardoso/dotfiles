@@ -15,7 +15,7 @@ npm_packages=(
 	jsdoc
 	mocha
 	n
-        node-sass
+    node-sass
 	npm-check-updates
 	ntl
 	pm2
