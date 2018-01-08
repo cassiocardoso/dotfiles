@@ -49,4 +49,7 @@ run_apps() {
 
     # colorpickers
     brew cask install colorpicker-skalacolor colorpicker-propicker
+
+    # nerd
+    brew cask install steam
 }
