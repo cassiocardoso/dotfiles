@@ -35,6 +35,7 @@ run_apps() {
     brew cask install iterm2
     brew cask install jewelrybox
     brew cask install ksdiff # Kaleidoscope command line
+    brew cask install licecap
     brew cask install macdown
     brew cask install mongodb-compass
     brew cask install phpstorm
