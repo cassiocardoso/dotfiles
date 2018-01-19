@@ -115,8 +115,6 @@ alias tw='npm run test:watch'
 alias tu='npm run test:ui'
 alias npc='npm run precommit'
 
-alias mocha6='mocha --compilers js:babel/register'
-
 # docker aliases
 alias dcb='docker-compose build'
 alias dcu='docker-compose up'
