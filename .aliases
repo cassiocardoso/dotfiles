@@ -78,6 +78,9 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 
+# brew
+alias brewhc="brew doctor && brew upgrade && brew update && brew cleanup"
+
 # Shortcuts
 alias g="git"
 alias gh="github"
