@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 npm_packages=(
+        alfred-polyglot
 	babel-cli
 	babel-eslint
 	babel-preset-latest
@@ -15,7 +16,7 @@ npm_packages=(
 	jsdoc
 	mocha
 	n
-    node-sass
+        node-sass
 	npm-check-updates
 	ntl
 	pm2
