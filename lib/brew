@@ -38,6 +38,7 @@ run_brew() {
 	# Databases
 	brew install mariadb
 	brew install mongodb
+        brew install postgres
 
 	# Apache/PHP Stuff
 	brew install httpd24
@@ -45,17 +46,25 @@ run_brew() {
 	brew install php71-imagick php71-mcrypt
 	brew install composer
 
-	#Python
+	# Python
 	brew install python3
 
-	#Ruby
+	# Ruby
 	brew install ruby
+
+        # Node and JS
+        brew install node
+        brew install nvm
+
+        # AWS CLI
+        brew install awscli
 
 	# Install wget with IRI support
 	brew install wget --with-iri
 
 	# Install useful binaries
 	brew install ack
+        brew install bat
 	brew install fasd
 	brew install thefuck
 	brew install git
@@ -64,11 +73,8 @@ run_brew() {
 	brew install imagemagick --with-webp
 	brew install lame
   	brew install nginx
-  	brew install node
-	brew install nvm
 	brew install rename
 	brew install tree
-	brew install wp-cli
 
 	# Install code review tools
 	brew tap codeclimate/formulae
@@ -80,7 +86,7 @@ run_brew() {
 	brew install git-extras
 
 	# Install other tools
-	brew install docker docker-machine docker-clean
+	brew install docker docker-machine docker-clean docker-compose
 	brew install watchman
 
 	# Remove outdated versions from the cellar
