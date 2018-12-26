@@ -38,8 +38,7 @@ run_apps() {
     brew cask install licecap
     brew cask install macdown
     brew cask install mongodb-compass
-    brew cask install phpstorm
-    brew cask install poedit
+    brew cask install postman 
     brew cask install robo-3t
     brew cask install sequel-pro
     brew cask install vagrant
