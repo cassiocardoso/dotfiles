@@ -84,13 +84,16 @@ alias brewhc="brew doctor && brew upgrade && brew update && brew cleanup"
 # Shortcuts
 alias g="git"
 alias gh="github"
+alias gfa="git fetch --all"
 alias gl="git log --oneline --all --graph --decorate"
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
+alias gpo="git push origin"
 alias gs="git status"
 alias gsl="git stash list"
 alias gsp="git stash pop"
 
 alias v="vim"
+alias cat="bat"
 
 # npm aliases
 alias ns='npm search'
