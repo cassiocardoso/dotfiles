@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-libs=(apps binaries brew dotfiles fonts npm rubygems tools)
+libs=(apps binaries brew dotfiles fonts npm tools)
 
 # Help text
 source ./lib/help
@@ -59,16 +59,6 @@ fi
 
 e_process "Installing Homebrew packages"
 run_brew
-
-#     ____        __
-#    / __ \__  __/ /_  __  __
-#   / /_/ / / / / __ \/ / / /
-#  / _, _/ /_/ / /_/ / /_/ /
-# /_/ |_|\__,_/_.___/\__, /
-#                   /____/
-
-e_process "Installing Gems"
-run_rubygems
 
 #     _   ______  __  ___
 #    / | / / __ \/  |/  /
@@ -181,21 +171,6 @@ if is_confirmed; then
     e_success "All Mac OS X Applications have been installed"
 
     e_warning "Please consider using cask commands for Updating/Upgrading or Uninstalling a Mac OS X Application"
-fi
-
-#     _____       __    ___
-#    / ___/__  __/ /_  / (_)___ ___  ___
-#    \__ \/ / / / __ \/ / / __ `__ \/ _ \
-#   ___/ / /_/ / /_/ / / / / / / / /  __/
-#  /____/\__,_/_.___/_/_/_/ /_/ /_/\___/
-#
-
-# Ask installing Sublime packages
-seek_confirmation "Do you want to install Sublime Packages and Preferences"
-
-if is_confirmed; then
-    e_process "Installing Sublime package"
-    run_sublime
 fi
 
 e_success "Your Mac is ready to rock!"
